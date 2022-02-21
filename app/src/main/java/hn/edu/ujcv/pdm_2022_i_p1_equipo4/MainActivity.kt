@@ -11,6 +11,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,18 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         val btnL =findViewById<Button>(R.id.btnL)
 
-
+        btn_AgregarPrestamo.setOnClickListener {
+            val intent:Intent = Intent(this, Prestamos::class.java)
+            startActivity(intent)
+        }
 
         btnL.setOnClickListener {
             val intent:Intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 
-        val button2 =findViewById<Button>(R.id.button2)
 
-
-        button2.setOnClickListener {
-            val intent:Intent = Intent(this, MainActivity3::class.java)
+        btn_Alumno.setOnClickListener {
+            val intent:Intent = Intent(this, AlumnoActivity::class.java)
             startActivity(intent)
         }
 

@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PDM_2022_I_P1_EQUIPO4">
         <activity
+            android:name=".MostrarPrestamos"
+            android:exported="false" />
+        <activity
+            android:name=".StudentListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AlumnoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_alumno"
+            android:theme="@style/Theme.PDM_2022_I_P1_EQUIPO4.NoActionBar" />
+        <activity
+            android:name=".Prestamos"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity3"
             android:exported="false" />
         <activity

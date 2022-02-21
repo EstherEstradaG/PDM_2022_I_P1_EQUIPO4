@@ -5,6 +5,7 @@ dependencyResolutionManagement {
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
     }
+
 }
 rootProject.name = "PDM_2022_I_P1_EQUIPO4"
 include ':app'
